@@ -45,7 +45,7 @@ client.connect(err => {
     // read all services in home
     app.get('/services', (req, res) => {
         serviceCollection.find()
-            .toArray((err, items) => {s
+            .toArray((err, items) => {
                 //console.log(items);
                 console.log("Hi akhi, I am from Services....");
                 res.send(items)
