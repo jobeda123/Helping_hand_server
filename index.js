@@ -47,6 +47,7 @@ client.connect(err => {
         serviceCollection.find()
             .toArray((err, items) => {s
                 //console.log(items);
+                console.log("Hi akhi, I am from Services....");
                 res.send(items)
             })
     })
