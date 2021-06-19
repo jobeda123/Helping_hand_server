@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
     res.send('Yes, I am connecting.....')
 })
 
+
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
     const bookServiceCollection = client.db("helpingHand").collection("bookService");
@@ -49,7 +50,6 @@ client.connect(err => {
                 res.send(items)
             })
     })
-
 
 
     // post add Book Service
