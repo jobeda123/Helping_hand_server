@@ -19,7 +19,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 
 
 app.get('/', (req, res) => {
-    res.send('Yes, I am connecting.....')
+    res.send('yes, update password done...')
 })
 
 
